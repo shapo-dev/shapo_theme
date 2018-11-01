@@ -5,30 +5,25 @@
  */
 
 
+    $(function () {
 
-var glide = new Glide('#intro', {
-  type: 'carousel',
-  perView: 4,
-  focusAt: 'center',
-  breakpoints: {
-    800: {
-      perView: 2
-    },
-    480: {
-      perView: 1
-    }
-  }
-})
+      // Slideshow 1
+      $("#slides1").responsiveSlides({
+        auto: false,
+        pagination: true,
+        nav: true,
+        fade: 500,
+        maxwidth: 800
+      });
 
-glide.mount()
+    });
+
 
  // Begin init
 (function ($, root, undefined) {
     $(function () {
     'use strict';
     // DOM ready, take it away
-
-
 
 
     // OFFERS TIMER

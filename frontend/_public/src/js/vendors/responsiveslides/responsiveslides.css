@@ -1,0 +1,35 @@
+a.rslides_nav {
+	position: absolute;
+    top: 50%;
+    z-index: 5;
+    color: #fff;
+    padding: 1em;
+}
+a.rslides_nav.rslides1_nav.prev {
+    left: 0;
+}
+a.rslides_nav.rslides1_nav.next {
+	right: 0;
+}
+.banner--caption {
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+
+    color: #fff;
+    margin: 0 auto;
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 24.5%;
+}
+
+.banner--caption h2 {
+    font-size: 3em;	
+}
+.banner--caption span {
+    font-size: 1.5em;	
+}
+.banner--caption .button {
+    font-size: 1em;	
+}
