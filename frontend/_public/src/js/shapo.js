@@ -5,14 +5,30 @@
  */
 
 
-function slider() {
-    
+function responsiveSlides() {
+      // get SLIDER ID
+      slider = document.getElementById(id);
+
+      // Slideshow 4
+      $(slider).responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });  
 }
 
-if (typeof slider != 'undefined' && $.isFunction(slider)) {
-    alert(slider = true;
+if (typeof responsiveSlides != 'undefined' && $.isFunction(responsiveSlides)) {
+
 } else {
-    alert(slider = false);
+
 }
 
 
