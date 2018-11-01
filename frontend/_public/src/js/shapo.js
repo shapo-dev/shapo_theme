@@ -5,6 +5,14 @@
  */
 
 
+if(typeof myfunc == 'function'){
+    alert("exist");
+}else{
+    alert("not exist");
+}
+
+
+
 
  // Begin init
 (function ($, root, undefined) {
