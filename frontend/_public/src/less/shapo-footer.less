@@ -1,0 +1,139 @@
+.footer-main {
+    background: @gray-light;
+}
+.footer-main .column--headline {
+    color: @brand-secondary;
+}
+
+/*.footer-main .footer--column > .column--content:before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: @brand-primary;
+    display: block;
+    margin-bottom: 0.625rem;
+}*/
+.footer-main ul {
+    list-style: none;
+}
+
+.payment_providers {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    align-items: center;
+    border-bottom: 1px solid @gray;
+}
+
+.payment_providers li {
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    padding: .45rem;
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    list-style-type: none;
+    height: 42px;
+    min-width: 140px;
+    border: 1px solid rgb(237, 238, 239);
+    background-color: #fff;
+}
+ .payment_providers li img {
+    height: 100%;
+    transition: all .2s ease-in-out;
+    transform: scale(1,1);
+    margin: 0 auto;
+}
+
+/*.payment_providers a:hover img {
+    transform: scale(1.1,1.1);
+	
+}   
+*/
+
+
+.social-media-links li {
+    float: left;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.social-media-links li a {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: inherit;
+}
+
+.social-media-links li a:hover {
+    opacity: 1;
+}
+
+
+/*.beSocial {
+    font-size: 2em;
+}*/
+.beSocial span.head-text {
+    font-size: 2rem;
+}
+
+
+
+.beSocial span {
+    font-size: .75rem;
+    display: block;
+    line-height: 1;
+    text-transform: none;
+    opacity: .85;
+    margin-bottom: 15px;
+}
+
+
+
+.copyright p {
+    text-align: left;
+    padding: 0 15px;
+    margin-bottom: -25px;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+
+
+a.backToTop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    .unitize(line-height,16);
+    padding: 1rem;
+    background: @gray;
+    color: @text-color;
+    border-radius: 100%;
+    z-index: 8000;
+    
+    &:hover {
+            color: @white;
+            background: @brand-secondary;
+        }
+
+}
+.top-icon {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s ease-in-out;
+    font-size: 2em;
+}
+
+a.backToTop:hover .top-icon {
+    transform: translate3d(0,0,20px);
+    transition: transform .2s ease-in-out;
+
+}
+
+
+
+.footer--copyright {
+    display: none;
+}

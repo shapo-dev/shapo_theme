@@ -1,0 +1,290 @@
+@media screen and (min-width: @desktopViewportWidth) {
+	.content-main--inner {
+	    padding: 0;
+	}
+
+.is--ctl-listing .is--no-sidebar-main 
+/*.is--ctl-forms .sidebar-main, 
+.is--ctl-tellafriend .sidebar-main, 
+.is--ctl-newsletter .sidebar-main, 
+.is--ctl-sitemap .sidebar-main, 
+.is--ctl-custom .sidebar-main, 
+.is--ctl-note.is--user .sidebar-main, 
+.is--ctl-address .sidebar-main, 
+.is--ctl-account.is--user .sidebar-main*/ {
+    display: block;
+    margin-right: 1rem;
+
+}
+
+.is--ctl-custom .sidebar-main {
+	display: none;
+}
+
+.listing--content {
+    display: block;
+    width: 84%;
+    padding-left: 1%;
+}
+
+
+
+
+.is--ctl-account .content--wrapper {
+    width: 80%;
+    float: left;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product--details .product-streams--content .product-slider--arrow.arrow--next, .product--details .product-streams--content .product-slider--arrow.arrow--prev, .product--details .related--content .product-slider--arrow.arrow--next, .product--details .related--content .product-slider--arrow.arrow--prev, .product--details .similar--content .product-slider--arrow.arrow--next, .product--details .similar--content .product-slider--arrow.arrow--prev, .product--details .viewed--content .product-slider--arrow.arrow--next, .product--details .viewed--content .product-slider--arrow.arrow--prev {
+    border: none;
+}
+
+
+.product--details .tab--navigation {
+    text-align: center;
+    border-bottom: 1px solid @brand-primary;
+}
+
+.js--tab-menu .tab--link,.js--tab-menu .tab--link.is--active,.js--tab-menu .tab--link:hover {
+    background-image: none;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: .2s all
+}
+
+.js--tab-menu .tab--link {
+    border-bottom: 3px solid transparent;
+    margin-bottom: 0;
+    background: transparent
+}
+
+.js--tab-menu .tab--link:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    top: 100%;
+    margin-bottom: -2px;
+    left: 0;
+    height: 3px;
+    transition: width .3s cubic-bezier(.175, .885, .32, 1);
+    -webkit-transition: width .3s cubic-bezier(.175, .885, .32, 1);
+    background-color: @brand-primary;
+}
+
+.js--tab-menu .tab--link.is--active:after,.js--tab-menu .tab--link:hover:after {
+    width: 100%
+}
+
+.js--tab-menu .tab--link.is--active,.js--tab-menu .tab--link.is--active .product--rating-count,.js--tab-menu .tab--link:hover,.js--tab-menu .tab--link:hover .product--rating-count {
+    color: #333
+}
+
+
+
+
+
+.btn:disabled, .btn:disabled:hover, .btn.is--disabled, .btn.is--disabled:hover {
+	background-image: none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 48em) {
+/*	.is--ctl-listing .sidebar-main, .is--ctl-forms .sidebar-main, .is--ctl-tellafriend .sidebar-main, .is--ctl-newsletter .sidebar-main, .is--ctl-sitemap .sidebar-main, .is--ctl-custom .sidebar-main, .is--ctl-note.is--user .sidebar-main, .is--ctl-address .sidebar-main, .is--ctl-account.is--user .sidebar-main {
+	    display: none;
+	}*/
+
+	.is--ctl-blog .sidebar-main + .content--wrapper, .is--ctl-note .sidebar-main + .content--wrapper, .is--ctl-note.is--user.is--one-time-account .sidebar-main + .content--wrapper, .is--ctl-index .sidebar-main + .content--wrapper, .is--ctl-detail .sidebar-main + .content--wrapper, .is--ctl-search .sidebar-main + .content--wrapper, .is--ctl-checkout .sidebar-main + .content--wrapper, .is--ctl-register .sidebar-main + .content--wrapper, .is--ctl-campaign .sidebar-main + .content--wrapper, .is--ctl-account.is--act-logout .sidebar-main + .content--wrapper, .is--ctl-account.is--act-password .sidebar-main + .content--wrapper, .is--ctl-account.is--act-resetPassword .sidebar-main + .content--wrapper, .is--ctl-listing.is--no-sidebar .sidebar-main + .content--wrapper {
+	    margin: 0;
+	}
+
+	.is--ctl-listing .sidebar-main + .content--wrapper, .is--ctl-forms .sidebar-main + .content--wrapper, .is--ctl-tellafriend .sidebar-main + .content--wrapper, .is--ctl-newsletter .sidebar-main + .content--wrapper, .is--ctl-sitemap .sidebar-main + .content--wrapper, .is--ctl-custom .sidebar-main + .content--wrapper, .is--ctl-note.is--user .sidebar-main + .content--wrapper, .is--ctl-address .sidebar-main + .content--wrapper, .is--ctl-account.is--user .sidebar-main + .content--wrapper {
+	    margin-left: 0;
+	    margin-left: 0;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.hide,.blog--detail .blog--comments-wrapper,span.blog--metadata-comments.blog--metadata,.blog--box .blog--box-metadata .blog--metadata:last-child,
+.blog--listing .panel--body,span.blog--metadata-date.blog--metadata.is--nowrap.is--first,.blog--bookmarks.block,span.blog--metadata-date.blog--metadata.is--first,
+.blog--filter-options {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.panel.has--border {
+    border: 0px solid #f0f0f0;
+}
+.panel--title.is--underline {
+    text-transform: uppercase;
+}
+
+
+.product--box .box--content {
+	border: 0;
+	padding: 0;
+}
+
+
+
+
+.border-radius(@radius: 0px) {
+	border-radius: @radius;
+	// Prevent the background color leaks out
+	background-clip: padding-box;
+}
+.border-radius-multi(@leftTop: 0, @rightTop:0, @rightBottom: 0, @leftBottom: 0) {
+	border-top-left-radius: @leftTop;
+	border-top-right-radius:  @rightTop;
+	border-bottom-right-radius: @rightBottom;
+	border-bottom-left-radius: @leftBottom;
+	// Prevent the background color leaks out
+	background-clip: padding-box;
+}
+.reset-border-radius() {
+    border-radius: 0;
+}
+
+
+
+.btn, .is--primary, .js--tab-menu .tab--link, .product--box .product--badges .product--badge, .raw-color-button  {
+	border: 1px solid @border-color;
+	background-image: none;
+	border-radius: 0;
+}
+
+.product--badge.badge--leather {
+    border: 1px solid transparent !important;
+    background-color: @brand-secondary;
+    color: @white;
+}
+
+.product--badge.badge--leather img {
+    max-width: 100%;
+    background: transparent;
+    display: block;
+    width: 1rem;
+    position: relative;
+    float: left;
+}
+
+.product--badge.badge--leather .badge--text {
+    padding-left: 5px;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    transition: all .25s ease-in-out 0s;
+    left: -5px;
+}
+
+.product--box:hover .badge--text {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+
+
+a {
+	transition: .2s ease;
+}
+
+
+
+
+nav.shop--navigation ul.navigation--list li.navigation--entry span.account--display {
+    display: none;
+}
+
+
+.container, .content-main {
+    background: transparent;
+    box-shadow: none;
+
+}
+
+
+
+
+
+
+.select-field select, .js--fancy-select select {
+    background-color: @input-bg;
+    background-image: none;
+}
+
+
+
+.configurator--variant .option--input:disabled ~ label:after {
+	content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, #ffffff 43%, #ffffff 46%, @gray-dark 47%, @gray-dark 53%, #ffffff 54%, #ffffff 57%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+.is--facebook {
+    background-color: @facebook;
+    color: @white;
+}
+.is--twitter {
+    background-color: @twitter;
+    color: @white;
+}
+.is--mail {
+    background-color: @brand-secondary;
+    color: @white;
+}
+
+
+

@@ -1,0 +1,100 @@
+.product--box .product--rating-container {
+    display: none;
+}
+
+
+
+
+
+
+/*@media screen and(min-width: @tabletViewportWidth) {
+
+    .is--supplierName {
+        width: 100%;
+        display: block;
+        font-size: 0.75rem;
+        color: #000;
+        margin-bottom: -0.25rem;
+    }
+
+    .product--box .product--price {
+        height: 20px;
+        height: 1.25rem;
+        position: relative;
+        top: -8.5rem;
+        text-align: center;
+    }
+
+
+}
+*/
+
+
+
+
+
+a.navigation--link.is--first {
+    display: none;
+}
+.navigation-main .navigation--link {
+    text-transform: uppercase;
+}
+a.navigation--link[title="SALE"]:after {
+    content: " %"
+}
+a.navigation--link[title="SALE"] {
+    background-color: @highlight-error;
+    color: #fff;
+}
+
+
+
+
+
+h1.hero--headline.panel--title,
+.hero--text.panel--body.is--wide {
+    text-align: center;
+}
+h1.hero--headline.panel--title:after {
+    position: relative;
+    background: @brand-primary;
+    width: 2rem;
+    height: 0.025rem;
+    content: "";
+    display: block;
+    margin: 0.45rem auto;
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+    .beSocial .column--headline {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+.is--ctl-listing .product--title {
+        .unitize-height(40);
+        .unitize-margin(0, 0, 2, 0);
+        .unitize(font-size, 14);
+        .unitize(line-height, 14);
+        display: block;
+        width: 100%;
+        color: @text-color-dark;
+        font-weight: @font-bold-weight;
+        overflow: hidden;
+
+        &:hover {
+            color: @link-color;
+        }
+    }
+}

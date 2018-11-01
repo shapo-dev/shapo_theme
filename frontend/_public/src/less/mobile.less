@@ -1,0 +1,151 @@
+@media screen and(min-width: @phoneLandscapeViewportWidth) {
+
+    .header-main {
+        -webkit-box-shadow: 0 2px 3px 0 rgba(51,51,52,.15);
+        box-shadow: 0 2px 3px 0 rgba(51,51,52,.15);
+
+    }
+
+    .emotion--wrapper {
+        margin: -15px auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+
+.product--box {
+    width: 50%;
+	}
+
+}
+
+
+
+
+.navigation--smartphone .entry--close-off-canvas {
+	background-image: none;
+}
+
+.overlay--headline {
+	display: none;
+}
+
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+
+.is--ctl-listing .box--image .product--info {
+    padding: 0;
+    position: relative;
+}
+
+
+.is--ctl-listing .box--image .product--image {
+	.unitize(height, 240);
+}
+
+
+.is--ctl-listing .image-slider.product--variants--info--wrapper {
+    position: absolute;
+}
+
+
+
+.is--ctl-listing .product--actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.is--ctl-listing .product--actions .action--text,
+.is--ctl-listing .image-slider--slide,
+.is--ctl-listing .product--box .product--rating-container,
+.is--ctl-listing .product--box .product--price-info .price--unit
+ {
+    display: none;
+}
+
+
+
+
+/*HEADER*/
+.header-main .header--navigation {
+    width: 100%;
+    background: @gray-light;
+    box-shadow: 0 2px 3px 0 @gray-light;
+    .unitize-padding(10, 0);
+}
+.header-main {
+	.unitize(padding-bottom, 0);
+}
+
+
+
+/*HIDE USER ACC & SERVICE MENU FOOTER*/
+li.navigation--entry.entry--account.with-slt,
+.footer--service-menu {
+    display: none;
+}
+
+
+/*LOGO*/
+.logo-main.block-group {
+    width: auto;
+    position: absolute;
+    .unitize(left, 50);
+    .unitize(top, 12);
+    z-index: 10;
+}
+.header-main .logo-main {
+  .unitize(padding, 0);
+}
+
+.logo--link picture {
+    .unitize(min-width, 100);
+    max-width: 100%;
+}
+.shop--navigation .navigation--entry .btn {
+	background: transparent;
+}
+
+
+/*HERO SLIDER*/
+.image-slider--container .arrow {
+    background: transparent;
+    border: none;
+    color: @white;
+}
+
+
+/*CONTENT EMOTIONS*/
+.content--emotions {
+	.unitize(padding , 0);
+}
+
+
+
+
+
+/*FOOTER
+.payment_providers li {
+    margin: 0 auto;
+    align-items: center;
+    .unitize(margin-top, 0);
+    .unitize(margin-bottom, 15);
+    list-style-type: none;
+    .unitize(height, 20);
+}
+*/
+
+/*FOOTER*/
+.payment_providers li {
+    .unitize(margin-top, 0);
+}
+
+
+
+}
+
+
+

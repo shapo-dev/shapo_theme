@@ -1,0 +1,31 @@
+{extends file='frontend/detail/content/buy_container.tpl'}
+
+
+                {* Product EAN *}
+                {if $sArticle.ean}
+                {block name='frontend_detail_data_order_ean'}
+                    <li class="base-info--entry entry--ean">
+
+                        {* Product SKU - Label *}
+                        {block name='frontend_detail_data_order_ean_label'}
+                            <strong class="entry--label">
+                        {s name="sEAN"}{/s}:
+                            </strong>
+                        {/block}
+
+                        {* Product SKU - Content *}
+                        {block name='frontend_detail_data_order_ean_content'}
+                            <meta itemprop="gtin13" content="{$sArticle.ean}">
+                            <span class="entry--content">
+                            {$sArticle.ean}
+                            </span>
+                        {/block}
+                    </li>
+                {/block}
+                {/if}
+
+
+    {* to do*}
+    {include file='frontend/detail/product-extra-text.tpl'}
+    <div class="clearfix"></div>
+    {include file='frontend/detail/social-media-share-bar.tpl'}

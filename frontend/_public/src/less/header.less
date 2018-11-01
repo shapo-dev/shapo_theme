@@ -1,0 +1,257 @@
+p.variant--name:after {
+    content: "Bitte wählen";
+    font-size: 12px;
+    margin-left: 0.25em;
+    color: rgba(26, 26, 26, .65);
+}
+
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+    .header-main .logo-main .logo--shop {
+        height: auto;
+        width: 100%;
+    }
+    .header-main .logo-main .logo--link {
+        height: auto;
+        display: inline-block;
+        max-width: 100%;
+    }   
+    .logo--link picture {
+        width: 100%;
+        max-width: 10rem;
+        height: auto;
+        min-width: 10rem;
+    }
+    /*TOP FEAT HOME*/
+    .is--ctl-index .banner-component {
+        display: none;
+    }
+
+}
+
+
+.header-main {
+        padding-bottom: 20px;
+        padding-bottom: 1.625rem;
+        border-bottom: 0 none;
+
+    }
+
+
+
+.header-main .logo-main {
+    width: 100%;
+    text-align: center;
+    padding: 0.625rem 0rem 0.625rem 0rem;
+    margin: 0;
+}
+
+.logo--link picture {
+        display: block;
+}
+
+
+    input.main-search--field {
+        border-top: 0;
+        border-right: 0;
+        box-shadow: none;
+        border-left: 0;
+        background: @input-bg;
+        transition: all .2s;
+    }
+
+
+
+
+
+
+
+
+
+.header-main .top-bar {
+  background-color: @brand-primary;
+  font-size: 13px;
+}
+
+.content--breadcrumb {
+    background-color: @white;
+    border-bottom: @white;
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+    .header-main .logo-main .logo--shop {
+        width: 100%;
+    }
+    .header-main .shop--navigation {
+        width: 40%;
+        padding-top: 0;
+        margin-top: -40px;
+        float: right;
+    }
+
+
+    /*SVG LOGO*/
+.logo--link picture {
+    width: 100%;
+    max-width: 100%;
+}
+/*SUCHE*/
+.shop--navigation .entry--search {
+    width: 50%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+
+    .header-main {
+        padding-bottom: 20px;
+        padding-bottom: 1.625rem;
+        border-bottom: 0 none;
+
+    }
+}
+
+
+
+.navigation--list .navigation--entry .btn {
+    border-color: transparent;
+}
+
+
+
+
+
+.banner-component {
+    display: none;
+}
+.is--ctl-index .banner-component {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 0;
+    align-items: center;
+    border-bottom: 0px solid @border-color;
+    background: #000;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    color: @gray-light;
+}
+
+span.header-message--bold {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.is--ctl-index .banner-component li {
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    padding: 0rem .625rem 0rem .625rem;
+    margin-top: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    list-style-type: none;
+    height: 30px;
+    height: 1.875rem;
+    text-align: center;
+}
+
+
+
+.banner-below {
+    float: left;
+    padding: 0.25em;
+}
+.shapo-top-usp-list ul {
+    list-style: none;
+}
+.shapo-top-usp-list ul li {
+    display: inline-block;
+    float: left;
+    color: @gray-light;
+    padding-right: 1em;
+    text-transform: uppercase;
+}
+.shapo-top-usp-list ul li i {
+    padding-right: 0.65em;
+}
+.header-main .top-bar a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/*@media screen and (min-width: 48em) {
+    .shop--navigation {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header-main .logo-main .logo--shop {
+        height: auto;
+        width: 100%;
+    }
+
+    .logo--link picture {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-width: 10rem;
+    }
+
+
+
+}
+*/
+
+
+
+
+/*MINIMAL HEADER*/
+.is--ctl-checkout.is--minimal-header .header-main, .is--ctl-register.is--minimal-header .header-main, .is--ctl-register.is--minimal-header.is--target-checkout .header-main {
+    border-bottom: 1px solid @border-color;
+}
+
+
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .is--ctl-checkout.is--minimal-header .header-main .logo--shop, .is--ctl-register.is--minimal-header .header-main .logo--shop, .is--ctl-register.is--minimal-header.is--target-checkout .header-main .logo--shop {
+        width: 24%;
+    }
+}
+
+
+.entry--search .main-search--form .main-search--field {
+    background: transparent;
+}
+
+
+
+
