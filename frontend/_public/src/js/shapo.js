@@ -10,6 +10,7 @@ if(typeof myfunc == 'function'){
 }else{
     //alert("not exist");
 
+
 }
 
 
