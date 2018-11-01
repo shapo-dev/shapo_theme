@@ -8,11 +8,38 @@
 
 
 
+
+
  // Begin init
 (function ($, root, undefined) {
     $(function () {
     'use strict';
     // DOM ready, take it away
+
+
+const mySiema = new Siema({
+  selector: '.siema',
+  duration: 200,
+  easing: 'ease-out',
+  perPage: 1,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: false,
+  rtl: false,
+  onInit: () => {},
+  onChange: () => {},
+});
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev(1, () => console.log('I am optional prev callback')));
+next.addEventListener('click', () => mySiema.next(1, () => console.log('I am optional next callback')));
+
+
+
 
 
     // OFFERS TIMER
