@@ -5,14 +5,15 @@
  */
 
 
-if(typeof myfunc == 'function'){
-    alert("exist");
-}else{
-    //alert("not exist");
-
-
+function slider() {
+    
 }
 
+if (typeof slider != 'undefined' && $.isFunction(slider)) {
+    alert(slider);
+} else {
+    alert(slider = false);
+}
 
 
 
