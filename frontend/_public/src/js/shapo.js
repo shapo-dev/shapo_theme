@@ -10,7 +10,7 @@ function slider() {
 }
 
 if (typeof slider != 'undefined' && $.isFunction(slider)) {
-    alert(slider);
+    alert(slider = true;
 } else {
     alert(slider = false);
 }
