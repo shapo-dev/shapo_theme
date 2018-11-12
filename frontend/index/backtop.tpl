@@ -1,5 +1,5 @@
 <!-- BACK TOP -->
 <a class="backToTop" href="#" onclick="return false;"">
-	<span class="top-icon"><i class="ti-angle-up"></i></span> 
+	<span class="top-icon"><i class="ti-angle-up"></i>NACH OBEN</span> 
 </a>
 <!-- //BACK TOP -->
