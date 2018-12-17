@@ -124,6 +124,7 @@ CSS3 animation keyframes.
     background-repeat: no-repeat;
     overflow: hidden;
     width: 40%;
+
 }
 
 
@@ -149,14 +150,12 @@ CSS3 animation keyframes.
     padding: 1em;
 }
 
-.caption {
+.col2.image-content .caption {
     position: absolute;
     z-index: 0;
     color: #fff;
-    bottom: 1%;
-    font-size: 8em;
-    font-weight: 900;
-    letter-spacing: -15px;
+    bottom: 1rem;
+    font-size: 7rem;
     overflow: hidden;
     width: 100%;
     pointer-events: none;

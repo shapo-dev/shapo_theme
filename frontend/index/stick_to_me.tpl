@@ -3,7 +3,7 @@
 		<div class="stick_content">
         
 		
-            <div class="col2 image-content" style="background-image: url(https://cdn.shapo.de//media/image/40/1c/64/shapo_nl_2018.jpg);">
+            <div class="col2 image-content" style="background-image: url(https://cdn.shapo.de//media/image/69/ec/91/shapo_nl_2018_600x800.jpg);">
              <div class="caption">15%</div>
             </div>
             
@@ -11,7 +11,8 @@
             <h1>Sicher dir deinen 15% Gutschein!</h1>
             <p>Jetzt zum Newsletter anmelden und 15% Rabatt auf deine erste Bestellung erhalten!</p>
 
-			<div id="form-143491-wrapper"><form id="ktv2-form-143491" accept-charset="UTF-8" method="post" action="https://www.klick-tipp.com/api/subscriber/signin.html" >
+			<div id="form-143491-wrapper">
+				<form id="ktv2-form-143491" accept-charset="UTF-8" method="post" action="https://www.klick-tipp.com/api/subscriber/signin.html">
 				<input type="hidden" id="FormField_ApiKey" name="apikey" value="3c4qz1ur5z8z10d5" />
 				<input type="hidden" id="FormField_Digit" name="fields[fieldDigit]" value="" />
 
@@ -23,9 +24,9 @@
 				</div>
 
 				<div class="ktv2-form-element">
-							<label for="FormField_EmailAddress">Ihre E-Mail-Adresse: </label>
+							<label for="FormField_EmailAddress"></label>
 							<br />
-							<input type="text" id="FormField_EmailAddress" name="email" value="" size="40"/>
+							<input type="text" id="FormField_EmailAddress" name="email" value="" size="40" placeholder="Deine E-Mail-Adresse" />
 				</div>
 				<div class="ktv2-form-element">
 					<input type="hidden" id="FormField_75751" name="fields[field75751]" value="1" />

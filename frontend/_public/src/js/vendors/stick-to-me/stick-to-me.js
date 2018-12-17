@@ -24,9 +24,11 @@
             bgclickclose : true,
             escclose : true,
             onleave : function (e) {},
-            disableleftscroll : true	// chrome disable
+            disableleftscroll : true    // chrome disable
         };
 
+
+ 
 
         var settings = $.extend({}, defaults, configs);
 
@@ -54,7 +56,7 @@
         var contw = parseFloat($(settings.layer).css("width"));
         var reqsettings = {
             backgroundcss: {'z-index':'1000','display':'none'},
-            boxcss: {'z-index':'1000','position':'fixed','left':'50%','top':'50%','height': (conth) + 'px','width': (contw ) + 'px', 'margin-left':(-contw/2)+'px', 'margin-top':(-conth/2) + 'px'}
+            boxcss: {'z-index':'5000','position':'fixed','left':'50%','top':'50%','height': (conth) + 'px','width': (contw ) + 'px', 'margin-left':(-contw/2)+'px', 'margin-top':(-conth/2) + 'px'}
         };
 
         $.extend(true, settings, reqsettings);
@@ -234,9 +236,4 @@
         stick_close();
     }
 
-
-
-console.log('stick-to-me loaded')
-
 }( jQuery ));
-

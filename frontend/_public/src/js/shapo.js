@@ -5,19 +5,6 @@
  */
 
 
-    $(function () {
-
-      // Slideshow 1
-      $("#slides1").responsiveSlides({
-        auto: false,
-        pagination: true,
-        nav: true,
-        fade: 500,
-        maxwidth: 800
-      });
-
-    });
-
 
  // Begin init
 (function ($, root, undefined) {
@@ -28,7 +15,7 @@
 
     // OFFERS TIMER
     var $clock = $('#clock'),
-        eventTime = moment('15-11-2018 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
+        eventTime = moment('24-12-2018 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
         diffTime = eventTime - currentTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
@@ -124,6 +111,20 @@ $(".backToTop").click(function() {
 })  
 
 
+
+
+
+
+        //FOCUS INPUT FIELD
+        var mailField = document.getElementById('FormField_EmailAddress');
+        $(mailField).attr('autofocus', 'true');
+        $(mailField).focus();
+        //console.log(mailField);
+
+        var firstname = document.getElementById('firstname');
+        $(firstname).attr('autofocus', 'true');
+        $(firstname).focus();
+        console.log(firstname);
 
 
 

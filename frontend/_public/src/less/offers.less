@@ -3,7 +3,7 @@
     background-color: #fff;
   }
   100% {
-    background-color: turquoise;
+    background-color: red;
   }
 }
 
@@ -18,11 +18,16 @@
 
 
 .sale--offer {
-    padding: 1em 0;
+    padding: 0.5em 0;
     background-color: gray;
     display: block;
     text-align: center;
 }
+.sale--offer + .content-main {
+    margin: -35px auto 35px auto;
+}
+
+
 .sale--offer h2 {
     color: #fff;
     text-transform: uppercase;
@@ -35,6 +40,14 @@
     background: #f7f7f7;
     padding: 0 1em;
     animation: pulse 1s infinite;
+
+}
+
+.sale--offer h4 {
+    margin-top: 0;
+    display: block;
+    padding: 0 1em;
+    color: @white;
 
 }
 
@@ -59,7 +72,7 @@
     display: inline-block;
     margin: 0 5px;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.0em;
     overflow: hidden;
     text-align: center;
     white-space: nowrap;

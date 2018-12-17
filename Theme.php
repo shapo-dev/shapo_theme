@@ -339,6 +339,90 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
 
+    // FIELD SET -- TOP BAR ADS
+    $fieldset = $this->createFieldSet(
+        'top_bar_ads_settings',
+        'Top Bar Ads'
+    );
+ 
+     $topbar_ads_active = $this->createCheckboxField(
+        'topbar_ads_active',
+        'topbar_ads_active',
+        false
+    );
+
+
+    // Topbar ADS Content
+    $topbar_ads_text = $this->createTextField(
+        'topbar_ads_text',
+        'Text',
+        ''
+    );
+    // Adding the fields to the fieldset
+    $fieldset->addElement($topbar_ads_active);  
+    $fieldset->addElement($topbar_ads_text);  
+    
+    // Create the tab which will be named "My custom colors"
+    $tab = $this->createTab(
+        'top_bar_ads_tab',
+        'Topbar (Ads)'
+    );
+
+    // ...add the fieldset to the tab
+    $tab->addElement($fieldset);
+
+    // ...last but not least add the tab to the container, which is a tab panel.
+    $container->addTab($tab);
+
+
+
+
+    // FIELD SET -- BANNER ADS
+    $fieldset = $this->createFieldSet(
+        'banner_ads_settings',
+        'Banner Ads'
+    );
+ 
+     $banner_ads_active = $this->createCheckboxField(
+        'banner_ads_active',
+        'Banner Ads',
+        false
+    );
+
+
+    // Banner ADS Content
+    $banner_ads_header = $this->createTextField(
+        'banner_ads_header',
+        'Banner Header',
+        ''
+    );
+    // Adding the fields to the fieldset
+    $fieldset->addElement($banner_ads_active);  
+    $fieldset->addElement($banner_ads_header);  
+    
+    // Create the tab which will be named "My custom colors"
+    $tab = $this->createTab(
+        'banner_ads_tab',
+        'Banner (Ads)'
+    );
+
+    // ...add the fieldset to the tab
+    $tab->addElement($fieldset);
+
+    // ...last but not least add the tab to the container, which is a tab panel.
+    $container->addTab($tab);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -346,25 +430,9 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /** @var array Defines the files which should be compiled by the javascript compressor*/ 
     protected $css = array(
         'src/js/vendors/stick-to-me/stick-to-me.css',
-        'src/js/vendors/responsiveslides/responsiveslides.css',
-
         /*'src/css/vendors/progressively/progressively.css',
         'src/css/vendors/ysExit/ysExit.css'*/
     );
@@ -372,7 +440,6 @@ public function createConfig(Form\Container\TabContainer $container)
 
     /** @var array Defines the files which should be compiled by the javascript compressor */
     protected $javascript = array(
-        'src/js/vendors/responsiveslides/responsiveslides.min.js',
         'src/js/vendors/moment/moment.min.js',
         'src/js/vendors/stick-to-me/stick-to-me.js',
         'src/js/shapo.js',
@@ -387,22 +454,13 @@ public function createConfig(Form\Container\TabContainer $container)
 
     /** @var string Defines the parent theme */
     protected $extend = 'Responsive';
-
     /** @var string Defines the human readable name */
     protected $name = 'Shapo';
-
     protected $injectBeforePlugins =  true;
-
     /** @var string Description of the theme */
     protected $description = 'Shapo custom Shopware 5 theme';
-
     /** @var string The author of the theme */
     protected $author = 'SHAPO';
-
     /** @var string License of the theme */
     protected $license = 'MIT';
 }
-
-
-
-
