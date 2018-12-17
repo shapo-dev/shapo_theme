@@ -35,7 +35,7 @@
         {* Leather badge *}
         {block name='frontend_listing_box_article_leather'}
             {if $sArticle.jtl_leder_badge}
-                <div class="product--badge badge--newcomer">
+                <div class="product--badge badge--leather">
                     {s name="ListingBoxleather"}{/s}
                 </div>
             {/if}
