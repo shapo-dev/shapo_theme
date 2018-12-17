@@ -41,6 +41,16 @@
             {/if}
         {/block}
 
+        {* Exclusive badge *}
+        {block name='frontend_listing_box_article_exlusive'}
+            {if $sArticle.jtl_exclusive_badge}
+                <div class="product--badge badge--exclusive">
+                    {s name="ListingBoxExclusive"}{/s}
+                </div>
+            {/if}
+        {/block}
+
+
 
 
         {* ESD product badge *}
